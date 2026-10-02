@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>SIAKAD - Transaksi Penilaian Mahasiswa</title>
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<style>code{color:#212529;background:#f8f9fc;border:1px solid #e3e6f0;padding:.1rem .35rem;border-radius:.2rem;font-size:80%}.table td,.table th{vertical-align:middle}.page-title i{color:#4e73df}</style>
+</head><body id="page-top"><div id="wrapper">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"><div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-graduation-cap"></i></div><div class="sidebar-brand-text mx-3">SIAKAD <sup>APP</sup></div></a>
+<hr class="sidebar-divider my-0">
+<li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-fw fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+<hr class="sidebar-divider"><div class="sidebar-heading">Master Data</div>
+<li class="nav-item"><a class="nav-link" href="prodi.html"><i class="fas fa-fw fa-university"></i> <span>Master Data Prodi</span></a></li>
+<li class="nav-item"><a class="nav-link" href="mahasiswa.html"><i class="fas fa-fw fa-user-graduate"></i> <span>Master Data Mahasiswa</span></a></li>
+<hr class="sidebar-divider"><div class="sidebar-heading">Transaksi</div>
+<li class="nav-item active"><a class="nav-link" href="penilaian.html"><i class="fas fa-fw fa-clipboard-list"></i> <span>Transaksi Penilaian</span></a></li>
+<hr class="sidebar-divider d-none d-md-block">
+<div class="text-center d-none d-md-inline w-100"><button class="rounded-circle border-0" id="sidebarToggle"></button></div>
+</ul>
+<div id="content-wrapper" class="d-flex flex-column"><div id="content">
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i></button>
+<ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="#"><span class="mr-2 d-none d-lg-inline small text-gray-600">Dr. Dosen Pengampuh, M.Kom</span>
+<img class="img-profile rounded-circle" src="img/undraw_profile.svg"></a></li></ul></nav>
+<div class="container-fluid">
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+<h1 class="h3 mb-0 text-gray-800 page-title"><i class="fas fa-calculator"></i> Transaksi Penilaian Mahasiswa</h1>
+<a href="#" class="btn btn-primary btn-sm shadow-sm"><i class="fas fa-plus-circle fa-sm"></i> Input Penilaian Baru</a></div>
+<div class="card shadow mb-4"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Rekapitulasi Nilai Akhir &amp; Grade Mahasiswa</h6></div>
+<div class="card-body"><div class="table-responsive">
+<table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+<thead class="thead-dark"><tr><th>Kode TRX</th><th>NIM</th><th>Nama Mahasiswa</th><th>Mata Kuliah</th><th>Tugas (30%)</th><th>UTS (30%)</th><th>UAS (40%)</th><th>Nilai Akhir</th><th>Grade</th><th>Status</th><th>Aksi</th></tr></thead><tbody>
+<tr><td><code>TRX-001</code></td><td>230101001</td><td class="font-weight-bold text-gray-800">Aditya Pratama</td><td>Pemrograman Web</td><td class="text-center">85</td><td class="text-center">80</td><td class="text-center">90</td><td class="text-center font-weight-bold text-primary">85.5</td><td class="text-center"><span class="badge badge-success p-2">A</span></td><td class="text-center"><span class="badge badge-success">Lulus</span></td><td class="text-center text-nowrap"><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i></a> <a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td><code>TRX-002</code></td><td>230101002</td><td class="font-weight-bold text-gray-800">Siti Nurhaliza</td><td>Pemrograman Web</td><td class="text-center">90</td><td class="text-center">88</td><td class="text-center">92</td><td class="text-center font-weight-bold text-primary">90.2</td><td class="text-center"><span class="badge badge-success p-2">A</span></td><td class="text-center"><span class="badge badge-success">Lulus</span></td><td class="text-center text-nowrap"><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i></a> <a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td><code>TRX-003</code></td><td>230102001</td><td class="font-weight-bold text-gray-800">Bagas Rahadian</td><td>Basis Data</td><td class="text-center">75</td><td class="text-center">70</td><td class="text-center">68</td><td class="text-center font-weight-bold text-primary">70.7</td><td class="text-center"><span class="badge badge-info p-2">B</span></td><td class="text-center"><span class="badge badge-success">Lulus</span></td><td class="text-center text-nowrap"><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i></a> <a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td><code>TRX-004</code></td><td>230103001</td><td class="font-weight-bold text-gray-800">Dewi Anggraini</td><td>Jaringan Komputer</td><td class="text-center">60</td><td class="text-center">55</td><td class="text-center">50</td><td class="text-center font-weight-bold text-primary">54.5</td><td class="text-center"><span class="badge badge-danger p-2">D</span></td><td class="text-center"><span class="badge badge-danger">Tidak Lulus</span></td><td class="text-center text-nowrap"><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i></a> <a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td><code>TRX-005</code></td><td>230104001</td><td class="font-weight-bold text-gray-800">Fajar Ramadan</td><td>Kecerdasan Buatan</td><td class="text-center">88</td><td class="text-center">85</td><td class="text-center">90</td><td class="text-center font-weight-bold text-primary">87.9</td><td class="text-center"><span class="badge badge-success p-2">A</span></td><td class="text-center"><span class="badge badge-success">Lulus</span></td><td class="text-center text-nowrap"><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i></a> <a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+</tbody></table></div></div></div></div></div>
+<footer class="sticky-footer bg-white"><div class="container my-auto"><div class="text-center small"><span>SIAKAD &copy; Transaksi Penilaian Mahasiswa 2026</span></div></div></footer></div></div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script>$(document).ready(function(){$("#dataTable").DataTable({columnDefs:[{orderable:false,targets:-1}]});});</script>
+</body></html>

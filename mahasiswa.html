@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>SIAKAD - Master Data Mahasiswa</title>
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<style>code{color:#212529;background:#f8f9fc;border:1px solid #e3e6f0;padding:.1rem .35rem;border-radius:.2rem;font-size:80%}.table td,.table th{vertical-align:middle}.page-title i{color:#4e73df}</style>
+</head><body id="page-top"><div id="wrapper">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"><div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-graduation-cap"></i></div><div class="sidebar-brand-text mx-3">SIAKAD <sup>APP</sup></div></a>
+<hr class="sidebar-divider my-0">
+<li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-fw fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+<hr class="sidebar-divider"><div class="sidebar-heading">Master Data</div>
+<li class="nav-item"><a class="nav-link" href="prodi.html"><i class="fas fa-fw fa-university"></i> <span>Master Data Prodi</span></a></li>
+<li class="nav-item active"><a class="nav-link" href="mahasiswa.html"><i class="fas fa-fw fa-user-graduate"></i> <span>Master Data Mahasiswa</span></a></li>
+<hr class="sidebar-divider"><div class="sidebar-heading">Transaksi</div>
+<li class="nav-item"><a class="nav-link" href="penilaian.html"><i class="fas fa-fw fa-clipboard-list"></i> <span>Transaksi Penilaian</span></a></li>
+<hr class="sidebar-divider d-none d-md-block">
+<div class="text-center d-none d-md-inline w-100"><button class="rounded-circle border-0" id="sidebarToggle"></button></div>
+</ul>
+<div id="content-wrapper" class="d-flex flex-column"><div id="content">
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i></button>
+<ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="#"><span class="mr-2 d-none d-lg-inline small text-gray-600">Dr. Dosen Pengampuh, M.Kom</span>
+<img class="img-profile rounded-circle" src="img/undraw_profile.svg"></a></li></ul></nav>
+<div class="container-fluid">
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+<h1 class="h3 mb-0 text-gray-800 page-title"><i class="fas fa-user-graduate"></i> Master Data Mahasiswa</h1>
+<a href="#" class="btn btn-primary btn-sm shadow-sm"><i class="fas fa-plus-circle fa-sm"></i> Tambah Mahasiswa Baru</a></div>
+<div class="card shadow mb-4"><div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Daftar Data Mahasiswa Terdaftar</h6></div>
+<div class="card-body"><div class="table-responsive">
+<table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+<thead class="thead-dark"><tr><th>No</th><th>NIM</th><th>Nama Mahasiswa</th><th>Program Studi</th><th>Angkatan</th><th>Jenis Kelamin</th><th>Email</th><th>Status</th><th>Aksi</th></tr></thead><tbody>
+<tr><td>1</td><td><code>230101001</code></td><td class="font-weight-bold text-gray-800">Aditya Pratama</td><td>Teknik Informatika</td><td>2023</td><td>Laki-laki</td><td>aditya@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>2</td><td><code>230101002</code></td><td class="font-weight-bold text-gray-800">Siti Nurhaliza</td><td>Teknik Informatika</td><td>2023</td><td>Perempuan</td><td>siti@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>3</td><td><code>230102001</code></td><td class="font-weight-bold text-gray-800">Bagas Rahadian</td><td>Sistem Informasi</td><td>2023</td><td>Laki-laki</td><td>bagas@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>4</td><td><code>230103001</code></td><td class="font-weight-bold text-gray-800">Dewi Anggraini</td><td>Teknologi Informasi</td><td>2022</td><td>Perempuan</td><td>dewi@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>5</td><td><code>230104001</code></td><td class="font-weight-bold text-gray-800">Fajar Ramadan</td><td>Sains Data</td><td>2023</td><td>Laki-laki</td><td>fajar@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>6</td><td><code>230101003</code></td><td class="font-weight-bold text-gray-800">Gita Savitri</td><td>Teknik Informatika</td><td>2023</td><td>Perempuan</td><td>gita@student.ac.id</td><td><span class="badge badge-warning">Cuti</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>7</td><td><code>230102002</code></td><td class="font-weight-bold text-gray-800">Hendra Gunawan</td><td>Sistem Informasi</td><td>2022</td><td>Laki-laki</td><td>hendra@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+<tr><td>8</td><td><code>230103002</code></td><td class="font-weight-bold text-gray-800">Intan Permata</td><td>Teknologi Informasi</td><td>2023</td><td>Perempuan</td><td>intan@student.ac.id</td><td><span class="badge badge-success">Aktif</span></td><td class="text-center"><a href="#" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a> <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a></td></tr>
+</tbody></table></div></div></div></div></div>
+<footer class="sticky-footer bg-white"><div class="container my-auto"><div class="text-center small"><span>SIAKAD &copy; Master Data Mahasiswa 2026</span></div></div></footer></div></div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script>$(document).ready(function(){$("#dataTable").DataTable({columnDefs:[{orderable:false,targets:-1}]});});</script>
+</body></html>
